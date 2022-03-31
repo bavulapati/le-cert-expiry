@@ -1,0 +1,17 @@
+{
+  "name": "xcad2k",
+  "version": "1.0.0",
+  "description": "",
+  "main": "client.js",
+  "scripts": {
+    "test": "ELECTRON_RUN_AS_NODE=1 electron .",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@postman/starship": "^1.3.4",
+    "electron": "^18.0.0"
+  }
+}

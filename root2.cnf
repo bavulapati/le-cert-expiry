@@ -1,0 +1,12 @@
+[req]
+distinguished_name = dn
+prompt = no
+
+[dn]
+CN = root2.starship.com
+
+[v3_ca]
+subjectKeyIdentifier = hash
+authorityKeyIdentifier = keyid:always,issuer
+basicConstraints = critical, CA:true
+keyUsage = critical, digitalSignature, cRLSign, keyCertSign
