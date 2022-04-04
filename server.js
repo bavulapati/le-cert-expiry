@@ -20,7 +20,8 @@ const serverOptions = {
   key: fs.readFileSync('./server.key.pem'),
   cert: fs.readFileSync('./server.cert.pem'),
   ca: [
-    fs.readFileSync('./intermediate.cert.pem')
+    fs.readFileSync('./intermediate.cert.pem'),
+    fs.readFileSync('./root2.cert.pem')
   ],
   enableTrace: true
 };
@@ -30,7 +31,6 @@ const clientOptions = {
   ca: [ 
     fs.readFileSync('./root1.cert.pem'),
     fs.readFileSync('./root2selfsigned.cert.pem'),
-    fs.readFileSync('./root2.cert.pem'),
   ]
 };
 
