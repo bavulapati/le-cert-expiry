@@ -1,4 +1,5 @@
 node_modules
 *.key.pem
+!server.key.pem
 *.srl
 *.csr.pem
